@@ -6,6 +6,7 @@ class SalchipapaDots < Formula
   version "v2.1.0"
 
   def install
+    (share/"salchipapa-dots").install Dir["*"]
     bin.install "install.sh" => "salchipapa-dots"
   end
 
